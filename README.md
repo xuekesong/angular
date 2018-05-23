@@ -46,6 +46,20 @@
     <p>"import { AppComponent } from './app.component';"</p>
     <p>"import { LoginComponent } from './login/login.component';"</p>
 
+    @NgModule({
+      declarations: [//声明顶层组件
+        AppComponent,
+        LoginComponent
+      ],
+      imports: [//辅助模块
+        BrowserModule, //浏览器的必备服务和指令
+        FormsModule, //表单处理和双向绑定
+        HttpModule //Http请求和响应的服务
+      ],
+      providers: [],//本模块中注入的服务
+      bootstrap: [AppComponent]//作为引导性组件,放入index.html的对应位置
+    })
+    export class AppModule { }
   </div>
 9.添加事件<br/>
    <div style="border: 1px solid #eee;width:300px;height:100px;">&lt;form&gt;
@@ -66,4 +80,11 @@
 11.使用DI（依赖性注入）<br/>
 12.subscribe用来观测数据<br/>
   <div>
+    getStudyTime(userId){
+      this.trainService.findStudyTime(userId)
+      .subscribe(result=>{
+        this.trainList=result;
+        loading.dismiss();
+      })
+    }
   </div>
