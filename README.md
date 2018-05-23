@@ -1,18 +1,18 @@
 #使用angular-cli构建angular项目
 
-1.安装angular-cli
-  更新到最新的angular/cli version
-  npm uninstall -g @angular/cli
-  npm cache verify 
-  npm install -g @angular/cli@next
-2.创建新文件（路径上不能有中文）--创建新文件之后在新文件名之下会出现一系列的目录
-  ng new 新文件名
-3.查看端口并运行文件，自动打开网页
-  cd 新文件名(进入新建文件的目录下)
-  ng serve -o(或在package.json里面做修改设置) --port XXXX指定端口号（否则默认4200）
-4.项目文件概览
-  所有的Angular组件、模版、样式、图片以及应用所需的任何东西都在src文件中，src之外的文件都是为构建应用提供支持用的。
-5.src文件夹
+1.安装angular-cli<br/>
+  更新到最新的angular/cli version<br/>
+  npm uninstall -g @angular/cli<br/>
+  npm cache verify <br/>
+  npm install -g @angular/cli@next<br/>
+2.创建新文件（路径上不能有中文）--创建新文件之后在新文件名之下会出现一系列的目录<br/>
+  ng new 新文件名<br/>
+3.查看端口并运行文件，自动打开网页<br/>
+  cd 新文件名(进入新建文件的目录下)<br/>
+  ng serve -o(或在package.json里面做修改设置) --port XXXX指定端口号（否则默认4200）<br/>
+4.项目文件概览<br/>
+  所有的Angular组件、模版、样式、图片以及应用所需的任何东西都在src文件中，src之外的文件都是为构建应用提供支持用的。<br/>
+5.src文件夹<br/>
   <ul>
     <li>app/app.component.{ts,html,css,spec.ts}<br/>使用HTML模板、CSS样式和单元测试定义AppComponent组件。 它是根组件，随着应用的成长它会成为一棵组件树的根节点。</li>
     <li>app/app.module.ts<br/>定义AppModule，这个根模块会告诉Angular如何组装该应用。 目前，它只声明了AppComponent。 稍后它还会声明更多组件。</li>
