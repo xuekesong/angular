@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>{{ title }}</h1>
+<nav>
+  <!-- routerLink路由链接,是RouterLink指令的选择器，它会把用户的点击转换为路由器的导航操作。是RouterModule 中公开的另一个指令 -->
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+
+<!-- 路由出口，当用户导航到这里时，根据路由显示相应的组件 -->
+<router-outlet></router-outlet>
+<app-message></app-message>

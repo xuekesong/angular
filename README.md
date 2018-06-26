@@ -2,8 +2,8 @@
 
 1.安装angular-cli<br/>
   &nbsp;&nbsp;更新到最新的angular/cli version<br/>
-  &nbsp;&nbsp;npm uninstall -g @angular/cli<br/>
-  &nbsp;&nbsp;npm cache verify <br/>
+  &nbsp;&nbsp;npm uninstall -g angular-cli<br/>
+  &nbsp;&nbsp;npm cache clean --force <br/>
   &nbsp;&nbsp;npm install -g @angular/cli@next<br/>
 2.创建新文件（路径上不能有中文）--创建新文件之后在新文件名之下会出现一系列的目录<br/>
   &nbsp;&nbsp;ng new 新文件名<br/>
