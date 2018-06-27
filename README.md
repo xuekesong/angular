@@ -1,6 +1,6 @@
 #使用angular-cli构建angular项目
 
-1.安装angular-cli<br/>
+1.全局安装angular-cli<br/>
   &nbsp;&nbsp;更新到最新的angular/cli version<br/>
   &nbsp;&nbsp;npm uninstall -g angular-cli<br/>
   &nbsp;&nbsp;npm cache clean --force <br/>
